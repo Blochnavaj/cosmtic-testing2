@@ -210,19 +210,23 @@ function PlaceOrder() {
 
       <div className='mt-10 bg-white p-8 rounded-lg shadow-lg border border-gray-200'>
         <h2 className='text-2xl font-bold mb-6 text-gray-800'>Select Payment Method</h2>
-        <div className='grid grid-cols-4 gap-6'>
-          {[
-            { name: 'PayPal', value: 'PayPal', img: 'https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png' },
-            { name: 'Stripe', value: 'Stripe', img: 'https://media.designrush.com/inspirations/656399/conversions/1-preview.jpg' },
-            { name: 'Razorpay', value: 'Razorpay', img: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Razorpay_logo.webp' },
-            { name: 'Cash On Delivery', value: 'cod', img: 'https://img.freepik.com/premium-vector/cod-icon-shipping-cash-delivery-symbol-vector-logo-template_883533-219.jpg?w=360' }
-          ].map(payment => (
-            <div key={payment.value} onClick={() => setMethod(payment.value)} className={`flex flex-col items-center border p-4 rounded-lg hover:shadow-lg transition transform hover:scale-105 cursor-pointer ${method === payment.value ? 'border-black' : 'border-gray-300'}`}>
-              <img src={payment.img} alt={payment.name} className='w-16 h-16 object-contain' />
-              <p className='mt-2 text-gray-700 font-medium'>{payment.name}</p>
-            </div>
-          ))}
-        </div>
+        <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6'>
+  {[
+    { name: 'PayPal', value: 'PayPal', img: 'https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png' },
+    { name: 'Stripe', value: 'Stripe', img: 'https://media.designrush.com/inspirations/656399/conversions/1-preview.jpg' },
+    { name: 'Razorpay', value: 'Razorpay', img: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Razorpay_logo.webp' },
+    { name: 'Cash On Delivery', value: 'cod', img: 'https://img.freepik.com/premium-vector/cod-icon-shipping-cash-delivery-symbol-vector-logo-template_883533-219.jpg?w=360' }
+  ].map(payment => (
+    <div 
+      key={payment.value} 
+      onClick={() => setMethod(payment.value)} 
+      className={`flex flex-col items-center justify-center border p-4 rounded-lg hover:shadow-lg transition-transform hover:scale-105 cursor-pointer ${method === payment.value ? 'border-black' : 'border-gray-300'}`}
+    >
+      <img src={payment.img} alt={payment.name} className='w-16 h-16 object-contain' />
+      <p className='mt-2 text-gray-700 font-medium text-center'>{payment.name}</p>
+    </div>
+  ))}
+</div>
       </div>
 
       <div className='mt-10 text-center'>
