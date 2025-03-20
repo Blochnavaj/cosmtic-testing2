@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "echo 'Build complete'",
+    "prebuild": "npm install --force"
   },
   "keywords": [],
   "author": "",
