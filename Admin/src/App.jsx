@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 
 import Add from "./Pages/Add";
-import LIst from "./Pages/LIst";
+import List from './Pages/List'
 import Orders from "./Pages/Orders";
 import Navbar from "./Components/Navbar";
 import SlideBar from "./Components/SlideBar";
@@ -33,7 +33,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Orders token={token} />} /> {/* ✅ Default Route */}
                   <Route path="/add" element={<Add token={token} />} />
-                  <Route path="/list" element={<LIst token={token} />} />
+                  <Route path="/list" element={<List token={token} />} />
                   <Route path="/orders" element={<Orders token={token} />} />
                   <Route path="*" element={<div>Page Not Found</div>} /> {/* ✅ Fallback Route */}
                 </Routes>
