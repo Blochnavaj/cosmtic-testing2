@@ -33,7 +33,7 @@ function Navbar() {
       {/* Fixed Navbar */}
       <div className='fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between items-center py-4 px-4 font-medium'>
         <Link to='/'>
-          <img src={assets.logo} className='w-36' alt="Logo" />
+          <img src={assets.logo} className='w-20 ' alt="Logo" />
         </Link>
 
         <ul className='hidden sm:flex gap-5 text-sm text-gray-500'>
@@ -105,7 +105,7 @@ function Navbar() {
             </div>
             <div className='absolute left-1/2 transform -translate-x-1/2'>
               <Link to='/'>
-                <img src={assets.logo} className='w-36' alt="Logo" />
+                <img src={assets.logo} className='w-[100px]' alt="Logo" />
               </Link>
             </div>
           </div>

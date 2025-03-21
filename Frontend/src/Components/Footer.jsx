@@ -23,9 +23,7 @@ function Footer() {
             <p className="font-semibold text-gray-800 mb-3">Company</p>
             <ul className="text-gray-600 space-y-2">
               <li><Link to='/about' >About Us</Link></li>
-              <li><Link to='/'>Careers</Link></li>
-              <li><Link to='/'>Blog</Link></li>
-              <li><Link to='/'>Contact</Link></li>
+              <li><Link to='/contact'>Contact</Link></li>
             </ul>
           </div>
 

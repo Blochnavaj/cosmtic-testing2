@@ -1,13 +1,6 @@
  
  
-import pro11 from './pro11.png'
-import pro12 from './pro12.png'
-import pro13 from './pro13.png'
-import pro14 from './pro14.png'
-import pro15 from './pro15.png'
-import pro16 from './pro16.png'
-import pro17 from './pro17.png'
-import pro18 from './pro18.png'
+ 
  
  
 import cat1 from './cat1.jpg'
@@ -18,7 +11,7 @@ import cat5 from './cat5.jpg'
 import cat6 from './cat6.jpg'
 import cat7 from './cat7.jpg'
 import cat8 from './cat8.jpg'
-import logo from './logo.png'
+import logo from './logo.jpg'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
@@ -54,9 +47,6 @@ export const assets = {
      
     Banner_1, Banner_2,
     cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,
-    pro11,
-    pro12,
-    pro13,pro14,pro15,pro16,pro17,pro18,
     logo,
     hero_img,
     cart_icon,
